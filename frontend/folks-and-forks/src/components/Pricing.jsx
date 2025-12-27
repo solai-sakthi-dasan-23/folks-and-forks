@@ -8,17 +8,23 @@ export default function Pricing() {
   return (
     <section id="pricing" className="bg-sectionTint py-20">
       <div className="section">
+
         <h2 className="heading text-center">
-          Simple Subscription Plans
+          Your Daily Nutrition, Simplified
         </h2>
 
-        <p className="text-center subtext mt-2 max-w-xl mx-auto">
-          Calculated as 4 weeks per month. Sundays excluded.
-          Transparent pricing, no hidden costs.
+        <p className="text-center text-textSecondary mt-3 max-w-xl mx-auto">
+          Choose a plan that builds a healthy routine —
+          without effort or guesswork.
         </p>
 
+        <p className="text-center text-xs text-textSecondary mt-2">
+          Calculated as 4 weeks per month. Sundays excluded.
+        </p>
+
+
         <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-6">
-          
+
           {/* Weekly Plan */}
           <div className="bg-white border border-borderLight rounded-2xl p-6 text-center shadow-sm hover:shadow-md transition">
             <h3 className="font-semibold text-lg">
