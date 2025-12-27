@@ -7,6 +7,7 @@ export default {
     extend: {
       colors: {
         brandGreen: "#1F7A4D",
+        brandGreenDark: "#16603D", // 👈 ADD THIS
         brandGreenSoft: "#EAF6F0",
         pageBg: "#F7FAF9",
         textPrimary: "#1F2933",
