@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-white text-textPrimary antialiased;
+}
+
+.section {
+  @apply max-w-7xl mx-auto px-4 sm:px-6;
+}
+
+.heading {
+  @apply text-3xl md:text-4xl font-bold text-brandGreen;
+}
+
+.subtext {
+  @apply text-textSecondary;
+}
+
+.primary-btn {
+  @apply bg-brandGreen text-white px-6 py-3 rounded-lg font-medium hover:bg-brandGreenDark transition;
+}
+
+.secondary-btn {
+  @apply border border-brandGreen text-brandGreen px-6 py-3 rounded-lg font-medium hover:bg-green-50 transition;
+}
+
+.input {
+  @apply w-full border border-borderLight rounded-lg px-4 py-3 focus:outline-none focus:border-brandGreen;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slideUp {
+  animation: slideUp 0.5s ease-out;
+}
