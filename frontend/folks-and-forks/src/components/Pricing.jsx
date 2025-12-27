@@ -10,7 +10,7 @@ export default function Pricing() {
       <div className="section">
 
         <h2 className="heading text-center">
-          Your Daily Nutrition, Simplified
+          Your Daily Nutrition Plan
         </h2>
 
         <p className="text-center text-textSecondary mt-3 max-w-xl mx-auto">
