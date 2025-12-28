@@ -6,6 +6,7 @@ import TrustBar from "./components/TrustBar";
 import NutriDetails from "./components/NutriDetails";
 import OrderForm from "./components/OrderForm";
 import Footer from "./components/Footer";
+import WhatsAppButton from "./components/WhatsAppButton";
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
         <TrustBar />
         <NutriDetails />
         <OrderForm />
+        <WhatsAppButton />
       </main>
       <Footer />
     </div>
