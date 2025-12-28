@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const slides = [
   {
@@ -21,6 +21,15 @@ const slides = [
 
 export default function HeroSlider() {
   const [index, setIndex] = useState(0);
+
+  // 🔁 Auto slide
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prev) => (prev + 1) % slides.length);
+    }, 2500); // 5 seconds
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <section className="relative overflow-hidden bg-white">
@@ -64,7 +73,7 @@ export default function HeroSlider() {
           </div>
         </div>
 
-        {/* IMAGE SIDE (MASKED SLIDE EFFECT) */}
+        {/* IMAGE SIDE */}
         <div className="relative h-[60vh] rounded-[2.5rem] overflow-hidden">
           <div
             className="absolute inset-0 transition-transform duration-700 ease-in-out"
@@ -82,6 +91,7 @@ export default function HeroSlider() {
             </div>
           </div>
         </div>
+
       </div>
     </section>
   );
