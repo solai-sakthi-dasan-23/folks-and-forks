@@ -6,7 +6,7 @@ export default function Footer() {
         {/* Contact Info */}
         <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-6">
           <a
-            href="tel:+919876543210"
+            href="tel:+919342861726"
             className="hover:text-brandGreen transition"
           >
             📞 +91 9342861726
